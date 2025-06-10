@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #0066ff;
+    background: #ca0000;
+    overflow-x: hidden;
+}
+
+
+.font-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-overlay-text h1 {
+    background: linear-gradient(45deg, #ffffff, #4facfe, #00f2fe, #ffffff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Splide Customizations */
+.splide__arrow {
+    background: rgba(255, 0, 0, 0.8);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.splide__arrow:hover {
+    opacity: 1;
+}
+
+.splide__arrow svg {
+    fill: rgb(0, 0, 0);
+}
+
+.splide__pagination__page {
+    background: #9CA3AF;
+    opacity: 0.8;
+    transition: background 0.3s, opacity 0.3s;
+    width: 10px;
+    height: 10px;
+}
+
+.splide__pagination__page.is-active {
+    background: #F97316;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.splide__pagination {
+    bottom: auto !important;
+}
+
+.modal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+    transition: transform 0.3s ease;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    float: right;
+    font-size: 1.5em;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.pricing-toggle-bg {
+    background-color: #3B82F6;
+}
+
+.pricing-toggle-dot {
+    transform: translateX(0%);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+input:checked ~ .pricing-toggle-dot {
+    transform: translateX(100%);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #6101fc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563EB;
+}

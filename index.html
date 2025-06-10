@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Haven - Your Slice of Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white">
+
+    <nav class="fixed top-0 left-0 right-0 z-20 bg-white/60 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#">
+                <img src="SkyGliders.png " alt="SkyGliders Resort Logo" class=" w-20 h-20 "> 
+            </a>
+            <div class="space-x-4">
+                <a href="#home" class="text-gray-700 hover:text-orange-500 transition duration-300">Home</a>
+                <a href="#rooms" class="text-gray-700 hover:text-orange-500 transition duration-300">Rooms</a>
+                <a href="#gallery" class="text-gray-700 hover:text-orange-500 transition duration-300">Gallery</a>
+                <a href="#contact" class="text-gray-700 hover:text-orange-500 transition duration-300">Contact</a>
+                <a href="#pricing" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('345182.jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 p-6 hero-overlay-text">
+            <h1 class="font-display text-6xl md:text-8xl text-white font-bold mb-4">Azure Haven</h1>
+            <p class="text-xl md:text-2xl text-amber-100 mb-8">Experience the Pinnacle of Luxury and Serenity.</p>
+            <a href="#pricing" class="bg-teal-600 hover:bg-teal-700 text-amber-50 font-bold py-3 px-8 rounded-lg text-lg shadow-xl transition duration-300 transform hover:scale-105">Book Your Stay</a>
+        </div>
+    </section>
+
+    <section id="home" class="py-8 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Discover Azure Haven</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Where the ocean crowns your luxury.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="OIP.jpg" alt="Resort View" class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-4">Our Story</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Nestled in a pristine cove, Azure Haven Resort was born from a dream to create an unparalleled sanctuary. We blend breathtaking natural beauty with exceptional service and world-class amenities to offer an unforgettable escape.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        From our eco-conscious design to our curated experiences, every detail at Azure Haven is crafted to inspire moments of joy, relaxation, and connection.
+                    </p>
+                    <a href="#" class="text-orange-500 hover:text-orange-600 font-semibold transition duration-300">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights" class="py-8 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Resort Highlights</h2>
+                <p class="text-lg text-gray-600">Indulge in our world-class amenities.</p>
+            </div>
+            <div id="highlights-slider" class="splide">
+                <div class="splide__track mb-4">
+                    <ul class="splide__list">
+                        <li class="splide__slide group">
+                            <div class="relative rounded-xl overflow-hidden shadow-lg mx-2">
+                                <img src="Infinity Pool.jpg" alt="Infinity Pool" class="w-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                                    <h3 class="text-2xl font-semibold text-white">Infinity Pool</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide group">
+                            <div class="relative rounded-xl overflow-hidden shadow-lg mx-2">
+                                <img src="Luxury Spa.jpg" alt="Luxury Spa" class="w-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                                    <h3 class="text-2xl font-semibold text-white">Luxury Spa</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide group">
+                            <div class="relative rounded-xl overflow-hidden shadow-lg mx-2">
+                                <img src="Private Villas.jpg" alt="Private Villas" class="w-[600px] h-[300px] object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                                    <h3 class="text-2xl font-semibold text-white">Private Villas</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide group">
+                            <div class="relative rounded-xl overflow-hidden shadow-lg mx-2">
+                                <img src="Sunset Pool Bar.jpg" alt="Pool Bar" class="w-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                                    <h3 class="text-2xl font-semibold text-white">Sunset Pool Bar</h3>
+                                </div>
+                            </div>
+                        </li>
+                         <li class="splide__slide group">
+                            <div class="relative rounded-xl overflow-hidden shadow-lg mx-2">
+                                <img src="Exciting Water Slides.jpg" alt="Water Slides" class="w-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 flex items-end p-6">
+                                    <h3 class="text-2xl font-semibold text-white">Exciting Water Slides</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="py-8 md:py-16 bg-sky-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Our Accommodations</h2>
+                <p class="text-lg text-gray-600">Elegance and comfort redefined.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="room-card bg-white rounded-xl shadow-xl overflow-hidden group cursor-pointer" data-room-id="1" data-room-title="Ocean View Suite" data-room-image="Ocean View Suite.jpg" data-room-details="Spacious suite with panoramic ocean views, private balcony, king-size bed, and a luxurious bathroom. Perfect for romantic getaways. Includes complimentary breakfast and Wi-Fi.">
+                    <img src="Ocean View Suite.jpg" alt="Ocean View Suite" class="w-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Ocean View Suite</h3>
+                        <p class="text-gray-600 mb-4">Breathtaking views, ultimate comfort.</p>
+                        <span class="text-orange-500 font-bold group-hover:underline">View Details</span>
+                    </div>
+                </div>
+                <div class="room-card bg-white rounded-xl shadow-xl overflow-hidden group cursor-pointer" data-room-id="2" data-room-title="Family Villa" data-room-image="Family Villa.jpg" data-room-details="Our two-bedroom family villa offers ample space, a private plunge pool, and a kitchenette. Ideal for families seeking comfort and privacy. Kids club access included.">
+                    <img src="Family Villa.jpg" alt="Family Villa" class="w-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Family Villa</h3>
+                        <p class="text-gray-600 mb-4">Spacious and private, perfect for families.</p>
+                        <span class="text-orange-500 font-bold group-hover:underline">View Details</span>
+                    </div>
+                </div>
+                <div class="room-card bg-white rounded-xl shadow-xl overflow-hidden group cursor-pointer" data-room-id="3" data-room-title="Beachfront Bungalow" data-room-image="Beachfront Bungalow.jpg" data-room-details="Step directly onto the sand from your charming beachfront bungalow. Features a rustic-chic design, outdoor shower, and direct beach access. A true tropical dream.">
+                    <img src="Beachfront Bungalow.jpg" alt="Beachfront Bungalow" class="w-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Beachfront Bungalow</h3>
+                        <p class="text-gray-600 mb-4">Your personal paradise on the beach.</p>
+                        <span class="text-orange-500 font-bold group-hover:underline">View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="roomModal" class="modal fixed inset-0 bg-black/70 flex items-center justify-center p-4 opacity-0 invisible z-[100]">
+        <div class="modal-content bg-white rounded-lg shadow-2xl max-w-2xl w-full p-6 md:p-8 transform scale-95 relative">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">×</button>
+            <img id="modalRoomImage" src="" alt="Room Image" class="w-full h-64 object-cover rounded-md mb-6">
+            <h3 id="modalRoomTitle" class="text-3xl font-semibold text-blue-600 mb-4"></h3>
+            <p id="modalRoomDetails" class="text-gray-700 leading-relaxed mb-6"></p>
+            <a href="#pricing" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">Book This Room</a>
+        </div>
+    </div>
+
+    <section id="gallery" class="py-8 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Visual Journey</h2>
+                <p class="text-lg text-gray-600">Immerse yourself in the beauty of Azure Haven.</p>
+            </div>
+        </div>
+        <div id="gallery-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="Aerial Resort View.jpg" alt="Aerial Resort View" class="w-full h-[30rem] md:h-[40rem] object-cover"/>
+                        <div class="absolute left-0 bg-black/50 text-white p-4 w-full text-center">Aerial Resort View</div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Breathtaking Sunset.jpg" alt="Sunset Over Ocean" class="w-full h-[30rem] md:h-[40rem] object-cover"/>
+                        <div class="absolute left-0 bg-black/50 text-white p-4 w-full text-center">Breathtaking Sunset</div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Serene Gardens.jpg" alt="Lush Gardens" class="w-full h-[30rem] md:h-[40rem] object-cover"/>
+                        <div class="absolute left-0 bg-black/50 text-white p-4 w-full text-center">Serene Gardens</div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="Underwater Wonders.jpg" alt="Underwater Adventure" class="w-full h-[30rem] md:h-[40rem] object-cover"/>
+                        <div class="absolute left-0 bg-black/50 text-white p-4 w-full text-center">Underwater Wonders</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section id="video-section" class="py-8 md:py-16 bg-gray-100">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Experience Azure Haven Virtually</h2>
+    <p class="text-lg text-gray-600 mb-8 md:mb-12 max-w-2xl mx-auto">Take a glimpse into the magic that awaits you.</p>
+
+    <div class="relative max-w-4xl mx-auto rounded-xl shadow-2xl overflow-hidden aspect-video">
+      <img src="thumbnail.jpg" alt="Video Thumbnail" id="videoThumbnail" class="w-full h-full object-cover cursor-pointer">
+      
+      <button id="playVideoButton" aria-label="Play Video" class="absolute inset-0 flex items-center justify-center">
+        <svg class="w-20 h-20 md:w-28 md:h-28 text-white opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+      <div id="videoPlayerContainer" class="hidden absolute inset-0 w-full h-full">
+        <!-- video gets injected dynamically here -->
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="events" class="py-8 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Events & Special Packages</h2>
+                <p class="text-lg text-gray-600">Celebrate your special moments with us.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-sky-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="Dream Weddings.jpg" alt="Weddings" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dream Weddings</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Host your magical day with stunning ocean backdrops and impeccable service.</p>
+                    <details class="text-sm">
+                        <summary class="cursor-pointer text-orange-500 font-semibold hover:underline">View Package Details</summary>
+                        <p class="mt-2 text-gray-500">Includes venue, catering for 100 guests, floral arrangements, and a dedicated wedding planner. Starting from $10,000.</p>
+                    </details>
+                </div>
+                <div class="bg-sky-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/corporate.jpeg" alt="Corporate Retreats" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Corporate Retreats</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Inspire your team with productive meetings and rejuvenating activities in paradise.</p>
+                     <details class="text-sm">
+                        <summary class="cursor-pointer text-orange-500 font-semibold hover:underline">View Package Details</summary>
+                        <p class="mt-2 text-gray-500">Customizable packages with meeting rooms, AV equipment, team-building activities, and accommodation. Contact for quote.</p>
+                    </details>
+                </div>
+                <div class="bg-sky-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                     <img src="Wellness Escapes.jpg" alt="Wellness Retreats" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Wellness Escapes</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Rejuvenate your mind, body, and soul with our tailored wellness programs.</p>
+                     <details class="text-sm">
+                        <summary class="cursor-pointer text-orange-500 font-semibold hover:underline">View Package Details</summary>
+                        <p class="mt-2 text-gray-500">3-day/5-day packages including yoga, meditation, spa treatments, and healthy cuisine. Starting from $1,200.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="py-8 md:py-16 text-white" style="background-image: url('thumbnail.jpg');background-position: center;">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-display mb-4">Exclusive Offers</h2>
+            <p class="text-lg mb-8">Don't miss out on our special deals and seasonal discounts!</p>
+            <div class="max-w-md mx-auto bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
+                <h3 class="text-2xl font-semibold mb-3">Early Bird Discount!</h3>
+                <p class="mb-4">Book 60 days in advance and get <strong class="text-orange-600">20% OFF</strong> your stay.</p>
+                <a href="#pricing" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300">Claim Offer</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="py-8 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Endless Adventures</h2>
+                <p class="text-lg text-gray-600">Dive into excitement or simply unwind.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-water text-5xl text-sky-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Jet Skiing</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-ship text-5xl text-sky-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Boating</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-person-swimming text-5xl text-sky-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Lazy River</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-umbrella-beach text-5xl text-sky-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Beach Lounging</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-volleyball-ball text-5xl text-orange-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Beach Volleyball</h3>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-mask text-5xl text-cyan-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Snorkeling</h3>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-spa text-5xl text-purple-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Spa Treatments</h3>
+                </div>
+                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <i class="fas fa-cocktail text-5xl text-pink-500 mb-4 transition-transform duration-300 hover:scale-110"></i>
+                    <h3 class="text-xl font-semibold text-slate-700">Pool Bar</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dining" class="py-8 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Culinary Delights</h2>
+                <p class="text-lg text-gray-600">Savor exquisite flavors from around the world.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="relative group rounded-xl overflow-hidden shadow-xl">
+                    <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/seafood-grill.jpeg" alt="Seafood Grill" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition-all duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-3xl font-semibold text-white mb-2">The Ocean's Catch</h3>
+                        <p class="text-gray-200">Fresh seafood grilled to perfection with stunning sea views.</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl">
+                     <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/fine-dining.jpeg" alt="Fine Dining" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition-all duration-300 flex flex-col justify-end p-6">
+                        <h3 class="text-3xl font-semibold text-white mb-2">Azure Fine Dining</h3>
+                        <p class="text-gray-200">An elegant experience with gourmet international cuisine.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 md:mt-16">
+                <h3 class="text-2xl font-semibold text-center text-gray-700 mb-8">More To Explore</h3>
+                <div id="food-carousel" class="splide">
+                    <div class="splide__track mb-4">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/desserts.jpeg" alt="Desserts" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                            <li class="splide__slide"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/cocktails.jpeg" alt="Cocktails" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                            <li class="splide__slide"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/local-cuisine.jpeg" alt="Local Cuisine" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                            <li class="splide__slide"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/breakfast-buffet.jpeg" alt="Breakfast Buffet" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                            <li class="splide__slide"><img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Resort%20Website%20Template/snacks.jpeg" alt="Snacks" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                            <li class="splide__slide"><img src="Dessert.jpg" alt="Desserts" class="rounded-lg shadow-md mx-1 w-[400px] h-[360px] object-cover"></li>
+                            <li class="splide__slide"><img src="Snacks.jpg" alt="Snacks" class="rounded-lg shadow-md w-full object-cover mx-1"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-8 md:py-16 bg-sky-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Words From Our Guests</h2>
+                <p class="text-lg text-gray-600">See what makes Azure Haven special.</p>
+            </div>
+            <div id="testimonials-slider" class="splide max-w-3xl mx-auto">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <img src="Sarah L.jpg" alt="Guest Avatar" class="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-orange-400">
+                                <p class="text-gray-600 italic mb-4">"An absolute paradise! The service was impeccable, and the views were breathtaking. We can't wait to return."</p>
+                                <h4 class="font-semibold text-gray-800">Sarah L.</h4>
+                                <div class="flex justify-center text-orange-500 mt-1">★★★★★</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <img src="John D.jpg" alt="Guest Avatar" class="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-orange-300">
+                                <p class="text-gray-600 italic mb-4">"The family villa was perfect for us. So much space and the kids loved the private pool. Highly recommend Azure Haven!"</p>
+                                <h4 class="font-semibold text-gray-800">John D.</h4>
+                                <div class="flex justify-center text-orange-500 mt-1">★★★★</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                                <img src="Emily R.jpg" alt="Guest Avatar" class="w-20 h-20 rounded-full mx-auto mb-4 border-4 border-orange-400">
+                                <p class="text-gray-600 italic mb-4">"From the spa treatments to the delicious food, every moment was pure bliss. A truly luxurious experience."</p>
+                                <h4 class="font-semibold text-gray-800">Emily R.</h4>
+                                <div class="flex justify-center text-orange-500 mt-1">★★★★</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="location" class="py-8 md:py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12 md:mb-16">
+            <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Find Your Paradise</h2>
+            <p class="text-lg text-gray-600">We are located in the heart of tranquility.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-6 flex justify-center">
+            <input id="locationSearch" type="text" placeholder="Search location..." class="border border-gray-300 rounded-lg px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button onclick="updateMap()" class="ml-2 bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition">Search</button>
+            <button onclick="getUserLocation()" class="ml-2 bg-green-600 text-white py-2 px-4 rounded-lg shadow-md hover:bg-green-700 transition">Use My Location</button>
+        </div>
+
+        <div class="relative rounded-xl shadow-2xl overflow-hidden h-[400px] md:h-[500px]">
+            <iframe
+                id="mapFrame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521202689074!2d106.82715271534963!3d-6.194420195512829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f423c98ba979%3A0x8077829130604590!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1684232109876!5m2!1sen!2sid"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Resort Location Map">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<script>
+    function updateMap() {
+        let location = document.getElementById("locationSearch").value;
+        if (location) {
+            let mapFrame = document.getElementById("mapFrame");
+            let encodedLocation = encodeURIComponent(location);
+            mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${encodedLocation}`;
+        }
+    }
+
+    function getUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                let latitude = position.coords.latitude;
+                let longitude = position.coords.longitude;
+                let mapFrame = document.getElementById("mapFrame");
+                mapFrame.src = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${latitude},${longitude}`;
+            }, function(error) {
+                alert("Unable to retrieve your location. Please enter it manually.");
+            });
+        } else {
+            alert("Geolocation is not supported by your browser.");
+        }
+    }
+</script>
+
+
+    <section id="pricing" class="py-8 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Choose Your Stay</h2>
+                <p class="text-lg text-gray-600 mb-6">Transparent pricing for your perfect getaway.</p>
+                <div class="flex justify-center items-center space-x-3">
+                    <span class="text-gray-700">Daily</span>
+                    <label for="pricingToggle" class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="pricingToggle" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-orange-500"></div>
+                    </label>
+                    <span class="text-gray-700">Weekly</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-2">Deluxe Room</h3>
+                    <p class="text-gray-500 text-sm mb-4">Comfort and style</p>
+                    <div class="text-4xl font-bold text-gray-800 mb-6">
+                        <span class="price" data-daily="$150" data-weekly="$900">$150</span>
+                        <span class="text-lg font-normal text-gray-500 price-period">/night</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-600 mb-8 flex-grow">
+                        <li>✓ King Size Bed</li>
+                        <li>✓ Balcony with Garden View</li>
+                        <li>✓ Complimentary Wi-Fi</li>
+                        <li>✓ Mini Bar</li>
+                    </ul>
+                    <a href="#" class="mt-auto w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">Book Now</a>
+                </div>
+                <div class="bg-blue-600 text-white p-8 rounded-xl shadow-2xl transform md:scale-105 flex flex-col relative">
+                    <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">Most Popular</div>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Ocean Suite</h3>
+                    <p class="text-blue-200 text-sm mb-4">Unforgettable views</p>
+                    <div class="text-4xl font-bold mb-6">
+                        <span class="price" data-daily="$250" data-weekly="$1500">$250</span>
+                        <span class="text-lg font-normal text-blue-100 price-period">/night</span>
+                    </div>
+                    <ul class="space-y-2 text-blue-100 mb-8 flex-grow">
+                        <li>✓ Panoramic Ocean View</li>
+                        <li>✓ Private Balcony</li>
+                        <li>✓ Jacuzzi Bathtub</li>
+                        <li>✓ Priority Check-in</li>
+                        <li>✓ Welcome Champagne</li>
+                    </ul>
+                    <a href="#" class="mt-auto w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">Book Now</a>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-orange-500 mb-2">Family Villa</h3>
+                    <p class="text-gray-500 text-sm mb-4">Space for everyone</p>
+                    <div class="text-4xl font-bold text-gray-800 mb-6">
+                        <span class="price" data-daily="$400" data-weekly="$2500">$400</span>
+                        <span class="text-lg font-normal text-gray-500 price-period">/night</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-600 mb-8 flex-grow">
+                        <li>✓ Two Bedrooms</li>
+                        <li>✓ Private Plunge Pool</li>
+                        <li>✓ Kitchenette</li>
+                        <li>✓ Kids Club Access</li>
+                    </ul>
+                    <a href="#" class="mt-auto w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-8 md:py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-4xl md:text-5xl font-display text-blue-600 mb-4">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="faq-item bg-gray-50 p-6 rounded-lg shadow-sm group">
+                    <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none">
+                        What are the check-in and check-out times?
+                    </summary>
+                    <p class="text-gray-600 mt-3 leading-relaxed">
+                        Check-in time is 3:00 PM and check-out time is 11:00 AM. Early check-in or late check-out may be available upon request and subject to availability for a nominal fee.
+                    </p>
+                </details>
+                <details class="faq-item bg-gray-50 p-6 rounded-lg shadow-sm group">
+                    <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none">
+                        Is parking available at the resort?
+                    </summary>
+                    <p class="text-gray-600 mt-3 leading-relaxed">
+                        Yes, we offer complimentary self-parking and valet parking services for all our guests.
+                    </p>
+                </details>
+                <details class="faq-item bg-gray-50 p-6 rounded-lg shadow-sm group">
+                    <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none">
+                        Do you have pet-friendly accommodations?
+                    </summary>
+                    <p class="text-gray-600 mt-3 leading-relaxed">
+                        Unfortunately, we do not allow pets at the resort, with the exception of service animals with proper documentation.
+                    </p>
+                </details>
+                <details class="faq-item bg-gray-50 p-6 rounded-lg shadow-sm group">
+                    <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none">
+                        What dining options are available?
+                    </summary>
+                    <p class="text-gray-600 mt-3 leading-relaxed">
+                        Azure Haven features three distinct dining venues: The Ocean's Catch (seafood), Azure Fine Dining (international gourmet), and The Splash Cafe (casual bites and drinks). We also offer 24/7 in-room dining.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="py-8 md:py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-display mb-4">Stay Updated With Azure Haven</h2>
+            <p class="text-lg text-blue-100 mb-8">Subscribe to our newsletter for exclusive offers, news, and travel inspiration.</p>
+            <form id="newsletterForm" class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email address" required class="flex-grow p-3 rounded-lg border border-transparent focus:ring-2 focus:ring-orange-400 focus:border-transparent text-gray-800 placeholder-gray-500">
+                <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">Subscribe</button>
+            </form>
+            <p id="newsletterMessage" class="mt-4 text-sm h-5"></p>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-800 text-gray-300 py-16">
+        <div class="container mx-auto px-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+                <div> <img src="SkyGliders 1.png" alt="Logo" class="w-50 h-40">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-display text-white mb-4">Azure Haven</h3>
+
+                    <p class="text-sm">123 Paradise Cove,<br>Oceanview City, OC 90210</p>
+                    <p class="text-sm mt-2">Phone: (123) 456-7890</p>
+                    <p class="text-sm">Email: reservations@aqualuxe.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-orange-400 transition">About Us</a></li>
+                        <li><a href="#rooms" class="hover:text-orange-400 transition">Accommodations</a></li>
+                        <li><a href="#dining" class="hover:text-orange-400 transition">Dining</a></li>
+                        <li><a href="#activities" class="hover:text-orange-400 transition">Activities</a></li>
+                        <li><a href="#faq" class="hover:text-orange-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-orange-400 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-orange-400 transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-xl hover:text-orange-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-xl hover:text-orange-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl hover:text-orange-400 transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-xl hover:text-orange-400 transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+                <p>© <span id="currentYear"></span> Azure Haven Resort. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" class="fixed bottom-6 right-6 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible z-50" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
